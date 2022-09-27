@@ -18,17 +18,22 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence() {
-  // seu código aqui
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  
+  const pointsPerWin = 3;
+  const pointsPerTies = 1;
+
+  let calc1 = wins * pointsPerWin;
+  let calc2 = ties * pointsPerTies;
+
+  return calc1 + calc2
 }
 
 // Desafio 6
@@ -71,4 +76,4 @@ module.exports = {
   highestCount,
   splitSentence,
   techList,
-};
+}
