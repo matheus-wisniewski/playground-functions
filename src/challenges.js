@@ -5,9 +5,9 @@
 
 function compareTrue(parametro1, parametro2) {
   if(parametro1 === true && parametro2 === true){
-    return 'true';
+    return true;
   } else if(parametro1 === false || parametro2 === false) {
-    return 'false'
+    return false;
   }
 }
 
