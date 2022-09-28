@@ -21,11 +21,18 @@ function splitSentence(string) {
   let splitedSentence = string.split(' ');
   return splitedSentence
 }
-console.log(splitSentence('foguete'))
 
 // Desafio 4
 function concatName(array) {
+// let concatenedNames; 
+
+  for (const iterator of array) {
+    concate = array.length[0] + array.length[-1];
+  }
+  
+  return concate
 }
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -93,28 +100,27 @@ function encode(parametro) {
     }else{
       code.push(parametro[index])
     }
-  } return code
+  } return code.join('');
 }
-  console.log(encode('hello'))
 
 function decode(parametroDois){
   let code = [];
   
-  for (let index in parametro) {
-    if (parametro[index] === '1') { 
+  for (let index in parametroDois) {
+    if (parametroDois[index] === '1') { 
       code.push('a');
-    } else if (parametro[index] === '2'){
+    } else if (parametroDois[index] === '2'){
       code.push('e');
-    } else if (parametro[index] === '3'){
+    } else if (parametroDois[index] === '3'){
       code.push('i');
-    } else if (parametro[index] ==='4'){
+    } else if (parametroDois[index] ==='4'){
       code.push('o');
-    } else if (parametro[index] === '5'){
+    } else if (parametroDois[index] === '5'){
       code.push('u');
     }else{
-      code.push(parametro[index])
+      code.push(parametroDois[index])
     }
-  } return code
+  } return code.join('');
 }
 
 // Desafio 10
