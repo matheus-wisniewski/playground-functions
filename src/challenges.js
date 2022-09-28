@@ -17,8 +17,11 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
+function splitSentence(string) {
+  let splitedSentence = string.split(' ');
+  return splitedSentence
 }
+console.log(splitSentence('foguete'))
 
 // Desafio 4
 function concatName(array) {
@@ -51,14 +54,12 @@ function highestCount(array) {
   return repeat;
 }
 
-// console.log(highestCount([9, 1, 2, 3, 9, 5, 7]));
-
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   let distanceCat1 = cat1 - mouse;
   let distanceCat2 = cat2 - mouse;
   let position;
-  // Transformar o valor da variável em positivo. Só usei em uma variável pq era a única dando esse erro.
+  // Transforma o valor da variável em positivo. Só usei em uma variável pq era a única dando esse erro.
   distanceCat1 = Math.abs(distanceCat1);
 
   if(distanceCat1 > distanceCat2){
@@ -71,16 +72,49 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(){
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(parametro) {
+  let code = [];
+  
+  for (let index in parametro) {
+    if (parametro[index] === 'a') { 
+      code.push('1');
+    } else if (parametro[index] === 'e'){
+      code.push('2');
+    } else if (parametro[index] === 'i'){
+      code.push('3');
+    } else if (parametro[index] ==='o'){
+      code.push('4');
+    } else if (parametro[index] === 'u'){
+      code.push('5');
+    }else{
+      code.push(parametro[index])
+    }
+  } return code
 }
-function decode() {
-  // seu código aqui
+  console.log(encode('hello'))
+
+function decode(parametroDois){
+  let code = [];
+  
+  for (let index in parametro) {
+    if (parametro[index] === '1') { 
+      code.push('a');
+    } else if (parametro[index] === '2'){
+      code.push('e');
+    } else if (parametro[index] === '3'){
+      code.push('i');
+    } else if (parametro[index] ==='4'){
+      code.push('o');
+    } else if (parametro[index] === '5'){
+      code.push('u');
+    }else{
+      code.push(parametro[index])
+    }
+  } return code
 }
 
 // Desafio 10
