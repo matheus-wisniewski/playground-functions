@@ -1,8 +1,4 @@
 // Desafio 1
-// const girafa = true;
-// const elefante = true;
-// const macaco = false;
-
 function compareTrue(parametro1, parametro2) {
   if(parametro1 === true && parametro2 === true){
     return true;
@@ -24,13 +20,12 @@ function splitSentence(string) {
 
 // Desafio 4
 function concatName(array) {
-// let concatenedNames; 
+ let concatenedNames; 
+ let firstName = array[0];
+ let lastName = array.pop();
 
-  for (const iterator of array) {
-    concate = array.length[0] + array.length[-1];
-  }
-  
-  return concate
+    concatenedNames = lastName + ', ' + firstName;
+    return concatenedNames
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
@@ -49,12 +44,12 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(array) {
     let repeat = 0;
-    var maior = array[0];
+    var highestInArray = array[0];
   for (let index = 0; index < array.length; index+=1) {
-   if (array[index] === maior){
+   if (array[index] === highestInArray){
     repeat += 1;
-   }else if (array[index] > maior){
-    maior = array[index];
+   }else if (array[index] > highestInArray){
+    highestInArray = array[index];
     repeat = 1;
    }
 
