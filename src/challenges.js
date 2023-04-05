@@ -27,7 +27,6 @@ function concatName(array) {
     concatenedNames = lastName + ', ' + firstName;
     return concatenedNames
 }
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -44,7 +43,7 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(array) {
     let repeat = 0;
-    var highestInArray = array[0];
+    let highestInArray = array[0];
   for (let index = 0; index < array.length; index+=1) {
    if (array[index] === highestInArray){
     repeat += 1;
